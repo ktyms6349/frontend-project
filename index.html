@@ -1,44 +1,41 @@
 <!DOCTYPE html>
-
 <html lang="ko">
 
 <head>
-
     <meta charset="UTF-8">
-
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <title>자기소개 웹 페이지</title>
+    <h1>디지털 알람 시계</h1>
 
     <link rel="stylesheet" href="style.css">
-
 </head>
 
 <body>
 
-    <h1>안녕하세요, 저는 권태연입니다.</h1>
+    <div id="clock">00:00:00</div>
 
-    <p>현재 프론트엔드 실무 체험에 참여하고 있습니다.</p>
+    <div id="battery">100%</div>
 
-    <h2>학력 소개</h2>
+    <div id="alarm">
 
-    <ul>
+        <h2>알람 설정</h2>
 
-        <li>한신대학교</li>
-        <li>AISW학</li>
-        <li>2학년</li>
+        <input type="number" id="hour" placeholder="시">
 
-    </ul>
+        <input type="number" id="minute" placeholder="분">
 
-    <h2>올해 이루고픈 목표 순위</h2>
+        <input type="number" id="second" placeholder="초">
 
-    <ol>
+        <button id="addAlarm">알람 추가</button>
 
-        <li>학교생활 성실히 하기</li>
-        <li>전공 공부 시간 늘리기</li>
-        <li>여러 비교과 프로그램 참여하기</li>
+        <h3>알람 현황 목록</h3>
 
-    </ol>
+        <ul id="alarmList">
+
+        </ul>
+
+    </div>
+
+    <script src="script.js"></script>
 
 </body>
 
